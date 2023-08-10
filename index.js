@@ -12,3 +12,6 @@ function increment() {
     countEl.innerHTML = count
 }
 
+function save() {
+    console.log(count)
+}
