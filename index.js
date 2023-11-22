@@ -2,8 +2,6 @@
 let countEl = document.getElementById("count-el")
 let saveEl = document.getElementById("save-el")
 
-console.log(countEl)
-
 let count = 0
 // listen for clicks on the increment button
 // increment the count variable when the button is clicked
@@ -14,7 +12,9 @@ function increment() {
 }
 
 function save() {
-    countStr = count + " - "
+    let countStr = count + " - "
     saveEl.innerHTML += countStr
+    countEl.innerHTML = 0
+    count = 0
 }
  
